@@ -1,3 +1,8 @@
+main {
+    width: 320px;
+    height: auto;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
 .icons {
     display: flex;
     align-items: center;
@@ -18,4 +23,10 @@ button{
 }
 .contact {
     margin-top: 150px;
+}
+h5 {
+    color: rgba(126, 126, 130, 1);
+}
+.search {
+    margin-left: 50px;
 }
