@@ -1,16 +1,19 @@
 @font-face {
     font-family: "TT Lakes";
     src: url(./fonts/TTLakes-Bold.ttf) format('truetype');
-    font-size: 700;
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "TT Lakes";
     src: url(./fonts/TTLakes-Medium.ttf) format('truetype');
-    font-size: 500;
+    font-weight: 500;
     font-style: normal;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -18,9 +21,6 @@ body {
 
 /*Основной контент*/
 main {
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 320px;
     height: auto;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -48,13 +48,15 @@ button{
     border: none;
     background-color: rgba(255, 255, 255, 1);
     font-family: "TT Lakes";
-    font-size: 500;
+    font-weight: 500;
     font-style: normal;
    
 }
 /*Стиль кнопок при наведении*/
 button:hover{
   opacity: 0.4; 
+  transition: opacity 0.5s;
+
 }
     
 
@@ -70,7 +72,7 @@ h5 {
     margin-top: 15;
     margin-bottom: 5px;
     font-family: "TT Lakes";
-    font-size: 500;
+    font-weight: 500;
     font-style: normal;
 }
 /*Иконка поиска*/
@@ -85,14 +87,16 @@ h5 {
 /*Номер телефона*/
 .number {
     font-family: "TT Lakes";
-    font-size: 700;
+    font-weight: 700;
     font-style:normal;
     color: rgba(27, 28, 33, 1);
 }
 /*Языки*/
 .lang {
+    display: flex;
+    gap: 5px;
     font-family: "TT Lakes";
-    font-size: 500;
+    font-weight: 500;
     font-style: normal;
     margin-top: 50px;
     margin: 0px 15px 0px;
@@ -100,7 +104,7 @@ h5 {
 /*Сайт*/
  .link {
     font-family: "TT Lakes";
-    font-size: 500;
+    font-weight: 500;
     font-style: normal;
     color: rgba(27, 28, 33, 1);
  }
