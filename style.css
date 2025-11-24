@@ -17,11 +17,14 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    max-width: 1200px;
+    
 }
 
 /*Основной контент*/
 main {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: auto;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
@@ -76,7 +79,7 @@ h5 {
     font-style: normal;
 }
 /*Иконка поиска*/
-.search {
+.icons--search {
     margin-left: 80px;
 }
 /*Голубая иконка с левой стороны*/
@@ -85,7 +88,7 @@ h5 {
     margin-right: 15px;
 }
 /*Номер телефона*/
-.number {
+.contact--number {
     font-family: "TT Lakes";
     font-weight: 700;
     font-style:normal;
@@ -98,8 +101,7 @@ h5 {
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
-    margin-top: 50px;
-    margin: 0px 15px 0px;
+    margin: 50px 0px 0px 15px;
 }
 /*Сайт*/
  .link {
@@ -108,10 +110,10 @@ h5 {
     font-style: normal;
     color: rgba(27, 28, 33, 1);
  }
- .ru {
+ .lang--ru {
     color: rgba(126, 126, 130, 1);
  }
  /*Иконка телефона*/
- .chat-copy{
+ .contact--chat-copy{
     margin-left: 0px;
  }
