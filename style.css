@@ -25,6 +25,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     width: 100%;
     max-width: 320px;
     height: 100vh;
@@ -81,7 +82,7 @@ img {
     color: rgba(126, 126, 130, 1);
     display: flex;
     align-items: center;
-    margin-top: 15;
+    margin-top: 15px;
     margin-bottom: 5px;
     font-family: "TT Lakes";
     font-weight: 500;
@@ -112,7 +113,7 @@ img {
     font-weight: 500;
     font-style: normal;
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 button {
     all:unset;
