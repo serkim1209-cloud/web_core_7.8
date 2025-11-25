@@ -23,9 +23,11 @@ body {
 
 /*Основной контент*/
 main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 320px;
-    height: auto;
+    height: 100vh;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 /*Все иконки*/
@@ -39,36 +41,43 @@ img {
     margin: 7px;
 }
 /*Блок меню*/
-.menu {
+.nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0px 15px 0px;
     gap: 20px;
 }
 /*Кнопки в меню*/
-button{
+.nav--link{
     border: none;
     background-color: rgba(255, 255, 255, 1);
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
+    border: 3px solid transparent;
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
+    margin: 0px 15px 0px;
+    padding: 5px;
    
 }
 /*Стиль кнопок при наведении*/
-button:hover{
+.nav--link:hover{
   opacity: 0.4; 
   transition: opacity 0.5s;
+  border-radius: 25px;
+  border-color: aqua;
 
 }
     
 
 /*Нижний блок с кантактной информацией*/
 .contact {
-     margin: 150px 15px 0px;
+  margin-left: 15px;
+  margin-top: auto;
 }
 /*Заголовок*/
-h5 {
+.left-border--link {
     color: rgba(126, 126, 130, 1);
     display: flex;
     align-items: center;
@@ -77,6 +86,7 @@ h5 {
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
+    text-decoration: none;
 }
 /*Иконка поиска*/
 .icons--search {
@@ -101,10 +111,14 @@ h5 {
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
-    margin: 50px 0px 0px 15px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+button {
+    all:unset;
 }
 /*Сайт*/
- .link {
+ .a {
     font-family: "TT Lakes";
     font-weight: 500;
     font-style: normal;
